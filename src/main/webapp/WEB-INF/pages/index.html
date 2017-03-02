@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello Freemarker</title>
+</head>
+<body>
+	<h1>你好,${username}</h1>
+	<ul>
+	<#list userList as item>
+		<li>${item.name},生日是：${item.berithTime?string('yyyy-MM-dd')}</li>
+	</#list>
+	</ul>
+</body>
+</html>
